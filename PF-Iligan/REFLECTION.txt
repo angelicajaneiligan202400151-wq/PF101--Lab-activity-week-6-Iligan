@@ -1,0 +1,22 @@
+REFLECTION
+
+1. What does `await` do? Why do we need it?
+-await is used so the code waits for the data before continuing.
+-In my code, I used it in fetchUsers() so it waits for the API response and JSON data.
+We need it so the users will load properly. If there is no await, the data might not be ready yet.
+
+2. What happens if the API is down? How does our code handle that?
+- If the API is down, the fetch will going to fail
+So that our cod uses try and catch
+-try runs the code
+-catch shows an error message if something goes wrong.
+
+
+3. What's the difference between `try` and `catch`?
+- Try is where the code runs (like fetching users).
+catch is where the error goes if something fails.
+In my code:
+try  fetch and display users 
+catch  show error message 
+try do the task 
+catch handle the error
